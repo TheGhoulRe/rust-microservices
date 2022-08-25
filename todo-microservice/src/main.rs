@@ -1,8 +1,7 @@
-// NEXT UP - add json parsing to todo-list
 
 /*
 
-NOTES
+NOTE
 * JSON format: { "action": "string", "value": "anything" }
 
 */
@@ -72,14 +71,3 @@ fn main() {
     consumer.commit_consumed().unwrap();
   }
 }
-
-/*
-TESTING STEPS
-1. Start up Zookeeper
-2. Start up Kafka server
-3. Create todo-list and todo-actions topics
-4. Start up todo-actions producer
-5. Run this code
-6. Pass some texts
-7. Run todo-list consumer
-*/
